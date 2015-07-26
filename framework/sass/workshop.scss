@@ -3,3 +3,24 @@
 
 /* Styles specific to this workshop
 ------------------------------------*/
+h2 span {
+  text-transform: lowercase;
+}
+.resized img {
+  width: 65%;
+}
+.max-width {
+  max-width: 100%;
+}
+.keep-calm {
+  background: url(../img/workshop/keep-calm.png) no-repeat 85% 20%;
+  background-size: 400px;
+}
+.dashboard {
+  background: radial-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.6)), url(../img/workshop/dashboard.png) no-repeat;
+  background-size: cover;
+  
+  h1 {
+    color: black;
+  }
+}
