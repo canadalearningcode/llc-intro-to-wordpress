@@ -34,10 +34,10 @@
       <h1>Welcome to Ladies Learning Code!</h1>
       
       <div class="instructions" data-markdown>
-        <p><strong>Get Connected:</strong><br>
+        <!-- <p><strong>Get Connected:</strong><br>
         Network: The Learning Labs<br>
-        Password: Helloworld</p>
-        <p><strong>Slide presentation:</strong> <a href="http://bit.ly/llc-wp">http://bit.ly/llc-wp-intro</a></p>
+        Password: Helloworld</p> -->
+        <p><strong>Slide presentation can be viewed here:</strong> <a href="http://bit.ly/llc-wp">http://bit.ly/llc-wp-intro</a></p>
       <!--   <p><strong>Download the learner files:</strong> <a href="http://bit.ly/llc-wp">http://bit.ly/llc-wp</a> (zip file)</p>
       <p>To view the slide presentation:</p>
       <ul>
@@ -61,14 +61,14 @@
           <span>Intro to Blogging</span><br>
           <span>& Wordpress</span>
         </h1>
-        <h2><span>with</span> Emily Baillie</h2>
-
+        <!-- <h2><span>with</span> Emily Baillie</h2>
+        
         <img class="instructor-img" src="framework/img/workshop/emily-baillie.jpg" alt="Emily Baillie">
         <ul>
           <li><i class="fa fa-envelope"></i><a href="mailto:emily@compasscontent.ca">emily@compasscontent.ca</a></li>
           <li><i class="fa fa-desktop"></i><a href="http://compasscontent.ca">www.compasscontent.ca</a></li>
           <li><i class="fa fa-twitter"></i><a href="http://twitter.com/EmilyBaillie">@EmilyBaillie</a></li>
-        </ul>
+        </ul> -->
       </div>
       <div class="sponsor">
         <p>In partnership with</p>
@@ -88,7 +88,7 @@
           <li>Getting to know the Dashboard
             <ul>
               <li>General settings</li>
-              <li>Adding Content </li>
+              <li>Adding Content</li>
               <li>WordPress options</li>
             </ul>
           </li>
@@ -100,7 +100,7 @@
       <div class="col-2">
         <h3>Part Two:</h3>
         <ul>
-          <li>More Wordpress settings</li>
+          <li>Default menus & custom menus</li>
           <li>Blogging tips &amp; tricks
             <ul>
               <li>Finding a niche</li>
@@ -167,7 +167,7 @@
 
         * creating site navigation elements
         * database management 
-        * themes for page layouts
+        * themes and templates for page layouts
         * making content searchable and indexable
         * and much more!
       </script>
@@ -183,6 +183,7 @@
         * now powering 22% of the web (Source: Forbes.com)
         * an online, open source (a.k.a. free) website creation tool 
         * written primarily in PHP, HTML, CSS, JavaScript 
+        * uses PHP templates & a database to create and store content (with static HTML, you have to manually create a new document for every new page)
         
         <br>
         Depending on your needs and level of customization, you may not need to edit any of the code to get up and running.
@@ -280,13 +281,30 @@
       <script type="text/template">
         ##The Dashboard: Home
         
-        Logging into the admin area will automatically take you the the Dashboard Home page. Here, you can view your drafts, check out basic stats, respond to comments and get a general overview of your blog. Click on any of the options to see more detail. 
-
-        The various menus contain links to different areas of the CMS to edit content, change how your blog looks and add/edit other features. There are lots of menu options but in the next few slides, we'll focus on the most common options to get you up and running.
+        Logging into the admin area will automatically take you the the Dashboard Home page. Here, you can view your drafts, check out basic stats, respond to comments and get a general overview of your blog. 
+        
+        Click on any of the options to see more detail. 
 
         ![Wordpress Dashboard](framework/img/workshop/dashboard.png)
       </script>
     </section>
+    
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## The Dashboard
+        
+        The various menus contain links to different areas of the CMS to edit content, change how your blog looks and add/edit other features. There are **lots** of menu options but today we'll focus on the most common options to get you up and running.  Some areas to be covered are:
+        
+        * setting up a public profile
+        * configuring basic settings
+        * adding content - pages vs posts
+        * publishing options
+        * categories, tags & slugs
+        * themes - customization options
+        * default navigation menus & custom menus
+      </script>
+    </section>
+    
     
     <section class="slide resized" data-markdown>
       <script type="text/template">
@@ -791,7 +809,7 @@
       </script>
     </section>
     
-    <section class="slide resized" data-markdown>
+    <section id="custom-menu" class="slide resized" data-markdown>
       <script type="text/template">
         ##Create a custom menu
         
@@ -907,12 +925,13 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Exercise - Update Your Menu (10mins)
+        ## Exercise - Update Your Menu (20mins)
         
-        Create or update the menu for your site:
+        Create or update the menu for your site.  
+        For reference, follow the directions from the [previous few slides](slides.html#custom-menu).
         
-        * add your page(s) to your menu if required
-        * change the homepage settings from the default blog setting if required
+        * add your page(s) to your menu, if required
+        * change the homepage settings from the default blog setting, if required
         
         If you're happy with your menu as is, take this time to update your theme or content.
       </script>
@@ -985,7 +1004,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Exercise: Understand your Audience
+        ##Exercise: Understand your Audience (10mins)
 
         Having a clear understanding of your target audience is your key to success. Consider what you know about your target audience and their interests while you're coming up with a topic for your blog post.
 
@@ -1040,7 +1059,7 @@
       
     <section class="slide list-font-smaller" data-markdown>
       <script type="text/template">
-        ##Exercise: Come Up with Great Topics
+        ##Exercise: Come Up with Great Topics (10mins)
         
         Choose a working title for your next blog post - you can refine your title later.
 
@@ -1067,7 +1086,7 @@
       <script type="text/template">
         #Write, Write, Write! 
         
-        ![](framework/img/workshop/typing.gif)
+        ![](framework/img/workshop/touch-typing.gif)
       </script>
     </section>
     
@@ -1088,9 +1107,6 @@
           * Leave a comment
           * Download an ebook
       </script>
-    </section>
-    
-    <section class="slide followers" data-markdown>
     </section>
     
     <section class="slide" data-markdown>
@@ -1146,6 +1162,14 @@
         To add images or videos, from your post, select the **Add Media** button and you will be presented with various options.  Also, under the **Media** menu, you can manage your files.
         
         ![](framework/img/workshop/adding-media.gif)
+      </script>
+    </section>
+    
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        ## Promote Your Blog
+        
+        ![](framework/img/workshop/big-time-blogger.gif) <!-- .element: style="width: 800px;" -->
       </script>
     </section>
 
@@ -1208,23 +1232,6 @@
       </script>
     </section>
     
-<!--     <section class="slide" data-markdown>
-  <script type="text/template">
-    ## SEO Keywords 
-
-    Write blogs that search engines like Google will love!
-
-    Use keywords and phrases in your web content that make it possible for people to find your site via search engines.
-
-    Ensure your SEO keywords are highly relevant to your audience.  
-    e.g. Pandora charm bracelet, Africa safari tours
-
-    Hyperlink SEO keywords.
-
-    Link blog posts to other posts in the series.
-  </script>
-</section> -->
-
     <section class="slide" data-markdown>
       <script type="text/template">
         ## SEO Tips for Multimedia
@@ -1238,7 +1245,6 @@
         Photos should be rendered in jpg format, logos should be gif files.
       </script>
     </section>
-    
     
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -1268,14 +1274,15 @@
         <span>Blogging & Wordpress</span>
       </h2>
       
-      <h3><span>with</span> Emily Baillie</h3>
-
+      <!-- instructor info -->
+      <!-- <h3><span>with</span> Emily Baillie</h3>
+      
       <img class="instructor-img" src="framework/img/workshop/emily-baillie.jpg" alt="">
       <ul>
         <li><i class="fa fa-envelope"></i><a href="mailto:emily@compasscontent.ca">emily@compasscontent.ca</a></li>
         <li><i class="fa fa-desktop"></i><a href="http://compasscontent.ca">www.compasscontent.ca</a></li>
         <li><i class="fa fa-twitter"></i><a href="http://twitter.com/EmilyBaillie">@EmilyBaillie</a></li>
-      </ul>
+      </ul> -->
       
       <br>
       <p>Happy Blogging!</p>
