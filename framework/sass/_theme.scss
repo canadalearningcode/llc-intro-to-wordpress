@@ -575,9 +575,10 @@ footer {
 /* Table of contents
 ---------------------*/
 .table-of-contents {
+  font-size: $font-size-sm;
+  
   li {
-    // width: 46%;
-    // display: inline-block;
+    margin-bottom: 0;
   }
   a {
     color: $gray-dark;
