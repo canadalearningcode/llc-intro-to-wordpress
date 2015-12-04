@@ -4,148 +4,106 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Ladies Learning Code</title>
-  <!-- Don't alter slideshow.css, CSSS slide deck needs it to work -->
   <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
-
-  <!-- Theme-specific styles -->
-  <link href='http://fonts.googleapis.com/css?family=Quicksand%7CPacifico%7COpen+Sans:400italic,400,300' rel='stylesheet' type='text/css' data-noprefix>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="framework/css/highlightjs-themes/github.css" data-noprefix>
-  <link rel="stylesheet" href="framework/css/theme-llc.css" data-noprefix>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CQuicksand%7CPacifico%7COpen+Sans:400italic,400,300' rel='stylesheet' type='text/css' data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
   <link rel="shortcut icon" href="framework/img/favicon.ico">
 
-  <!-- Workshop-specific styles -->
-  <link rel="stylesheet" href="framework/css/workshop.css" data-noprefix>
-
-  <!-- Takes care of CSS3 prefixes! -->
+  <!-- Takes care of CSS3 prefixes -->
   <script src="framework/scripts/prefixfree.min.js"></script>
-
   <!-- opens all links in a new window -->
   <base target="_blank">
 </head>
 
 <!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
-<body data-duration="360">
-
-  <!-- Welcome slide -->
-  <header class="slide" data-markdown>
-    <script type="text/template">
-      <img class="logo" src="framework/img/logo-llc-white.png" alt="Ladies Learning Code logo">
-      <h1>Welcome to Ladies Learning Code!</h1>
-      
-      <div class="instructions" data-markdown>
-        <!-- <p><strong>Get Connected:</strong><br>
-        Network: The Learning Labs<br>
-        Password: Helloworld</p> -->
-        <p><strong>Slide presentation can be viewed here:</strong> <a href="http://bit.ly/llc-wp">http://bit.ly/llc-wp-intro</a></p>
-      <!--   <p><strong>Download the learner files:</strong> <a href="http://bit.ly/llc-wp">http://bit.ly/llc-wp</a> (zip file)</p>
-      <p>To view the slide presentation:</p>
-      <ul>
-        <li>unzip the file (<em>extract all</em> if you’re on a PC)</li>
-        <li>open <strong>slides.html</strong> in your browser.</li>
-      </ul>
-            </div>  -->            
-      <div class="sponsor">
-        <p>In partnership with</p>
-        <img src="framework/img/telus-logo-white.svg" alt="Telus logo">
-      </div>
-    </script>
-  </header>
-
+<body class="en" data-duration="360">
   <main>
+    <section class="slide welcome">
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
+      
+      <div class="instructions no-bullet-list">
+        <!-- ADD WIFI INFO HERE -->
+        <!-- <h2>Get Connected</h2>
+        <ul class="connected">
+          <li>Network: network</li>
+          <li>Password: password</li>
+        </ul>
+        <hr> -->
+        
+        <h2>Workshop<br> Instructions</h2>
+        <ul class="downloads">
+          <li>View slide presentation here: <a href="http://bit.ly/llc-wp-intro">bit.ly/llc-wp-intro</a>
+          </li>
+          <li>Go to <a href="http://wordpress.com">WordPress.com</a> and create an account.<br>
+          For additional instructions for setting up an account, navigate to the presentation url and click <a href="http://ladieslearningcode.github.io/llc-intro-to-wordpress/set-up.html#slide1">here</a>.</li>
+        </ul>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Content created by <a href="https://twitter.com/EmilyBaillie">Emily Baillie</a>, <a href="http://www.stelsewhereweb.com">Daniel Butterfield</a> & <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+    
     <!-- Instructor info -->
     <section class="slide intro">
-      <img class="logo" src="framework/img/logo-llc-white.png" alt="Ladies Learning Code logo">
-      <div class="info">
-        <h1 class="heading-bg">
-          <span>Intro to Blogging</span><br>
-          <span>& Wordpress</span>
-        </h1>
-        <!-- <h2><span>with</span> Emily Baillie</h2>
-        
-        <img class="instructor-img" src="framework/img/workshop/emily-baillie.jpg" alt="Emily Baillie">
-        <ul>
-          <li><i class="fa fa-envelope"></i><a href="mailto:emily@compasscontent.ca">emily@compasscontent.ca</a></li>
-          <li><i class="fa fa-desktop"></i><a href="http://compasscontent.ca">www.compasscontent.ca</a></li>
-          <li><i class="fa fa-twitter"></i><a href="http://twitter.com/EmilyBaillie">@EmilyBaillie</a></li>
-        </ul> -->
-      </div>
+      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
+      <h1 class="heading-bg">
+        <span>Intro to Blogging</span><br>
+        <span>& Wordpress</span>
+      </h1>
+      
+      <!-- FILL IN INSTRUCTOR DETAILS -->
+      <!-- <img class="instructor" src="http://christinatruong.com/christina-truong-square.jpg" alt="Christina Truong">
+      <h2><span class="cursive">with</span> Instructor name</h2>  
+      <ul>
+        <li><a href="mailto:">hello@email.com</a></li>
+        <li><a href="http://website.com">website.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul> -->
+      
       <div class="sponsor">
-        <p>In partnership with</p>
-        <img src="framework/img/telus-logo-white.svg" alt="Telus logo">
+        <p>In partnership with<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
       </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Content created by <a href="https://twitter.com/EmilyBaillie">Emily Baillie</a>, <a href="http://www.stelsewhereweb.com">Daniel Butterfield</a> & <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-      ##Course Outline
-      
-      <div class="col-2">
-        <h3>Part One:</h3>
-        <ul>
-          <li>Blog vs Website</li>
-          <li>What is WordPress?</li>
-          <li>Getting to know the Dashboard
-            <ul>
-              <li>General settings</li>
-              <li>Adding Content</li>
-              <li>WordPress options</li>
-            </ul>
-          </li>
-          <li>HTML Crash Course!</li>
-          <li>WordPress Themes</li>
-        </ul>
-      </div>
-      
-      <div class="col-2">
-        <h3>Part Two:</h3>
-        <ul>
-          <li>Default menus & custom menus</li>
-          <li>Blogging tips &amp; tricks
-            <ul>
-              <li>Finding a niche</li>
-              <li>Organizing content</li>
-              <li>Promoting your blog</li>
-              <li>Search Engine Optimization</li>
-            </ul>
-          </li>
-          <li>Next steps &amp; resources</li>
-        </ul>
-      </div>
-      <hr style="clear:both;"><br>
-      
-      See the Ladies Learning Code Wordpress sample blog here: http://ladieslearningcode.wordpress.com
-      
+        #Course Outline
+
+        <div class="table-of-contents"></div>
+        
+        See the Ladies Learning Code WordPress sample blog here: http://ladieslearningcode.wordpress.com
       </script>
     </section>
 
-    <section class="slide" data-markdown>
+    <section class="slide" data-markdown data-toc>
       <script type="text/template">
-        ##Blog vs Website
-        
-        How are blogs different from standard websites?
-        
-        * the term *blog* is actually an abbreviation for *weblog*
-        * blogs often contain an ongoing collection of posts and articles presented in chronological order
+        #Blog vs Website
+
+        * the term *blog* is an abbreviation for *weblog*
+        * blogs often contain an ongoing collection of time-based posts, presented in chronological order
         * often (but not always) written in a diary-style of commentary
-        * a website can also contain a blog and standard informational pages
+        * a website contains informational pages but can also have a blog section
         
-        <br>
-        Let’s look at some popular blogs. What do you think makes a blog popular?
-        
-        * [Stuck in Customs](http://www.stuckincustoms.com/)
-        * [TechCrunch](http://techcrunch.com/)
-        * [The Sartorialist](http://www.thesartorialist.com/)
-        * [GOOP](http://goop.com/)
-        * [The Huffington Post](http://www.huffingtonpost.ca/)
-        * [Lifehacker](http://lifehacker.com/)
+        Some popular blogs:  
+        [TechCrunch](http://techcrunch.com/), [The Sartorialist](http://www.thesartorialist.com/), [The Huffington Post](http://www.huffingtonpost.ca/), [Lifehacker](http://lifehacker.com/)
+
+        > What do you think makes a blog popular?
       </script>
     </section>
     
     <section class="slide keep-calm list-font-default" data-markdown>
       <script type="text/template">
-        ## Why Should I Start a Blog?
-        
+        # Why Should I Start a Blog?
+
         * Drive traffic to your website
         * Convert that traffic into leads or sales
         * Establish authority
@@ -157,13 +115,11 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## What is a CMS?
+        #Content Management System (CMS)
         
-        A content management system (CMS), is an application used to edit content and manage a website using a graphical user interface.
+        A CMS is an application used to edit content and manage a website using a graphical user interface rather than editing code.
         
-        Web content can be modified and published without editing the code or database.
-        
-        A CMS like WordPress also includes features such as:
+        A CMS, like WordPress, may also includes features such as:
 
         * creating site navigation elements
         * database management 
@@ -173,70 +129,54 @@
       </script>
     </section>
     
-    <section class="slide wp-intro" data-markdown>
+    <section class="slide wp-intro" data-markdown data-toc>
       <script type="text/template">
-        ##What is WordPress?
+        #What is WordPress?
         
         ![](framework/img/workshop/wp-logo.png)
         
-        * one of many types of blogging software and CMS.
-        * now powering 22% of the web (Source: Forbes.com)
+        * a types of blogging software and a CMS
+        * now powering ~22% of the web (Source: Forbes.com)
         * an online, open source (a.k.a. free) website creation tool 
-        * written primarily in PHP, HTML, CSS, JavaScript 
-        * uses PHP templates & a database to create and store content (with static HTML, you have to manually create a new document for every new page)
+        * uses templates & a database to create and store content (with HTML, each new page must be created manually)
         
         <br>
-        Depending on your needs and level of customization, you may not need to edit any of the code to get up and running.
-        
-        There are two options for using WordPress, WordPress.**org** and WordPress.**com**.
+        There are two options for using WordPress:  [WordPress.**org**](http://wordpress.org) and [WordPress.**com**](http://wordpress.com).
       </script>
     </section>
     
-    <section class="slide">
-        <h2>WordPress.com <span>vs</span> WordPress.org</h2>
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        #WordPress.com vs WordPress.org
+        
+        * WordPress**.com**
+          *   yoursite.wordpress.com*
+          *   hosted & maintained by WordPress
+          *   no access to the code*
+          *   theme options are included but cannot upload your own themes or use plugins
+          *   different plans (up to $299) with added features & upgrades*
+        * WordPress**.org**
+          *   you are responsible for purchasing domain, hosting & site maintenance
+          *   requires web development knowledge (PHP, HTML, CSS, JS)
+          *   more theme options
+          *   full control over themes files
+          *   1000s of plugins to add more features
           
-        <div class="col-2">
-          <p><a href="http://wordpress.com">WordPress.com</a></p>
-          <ul>
-            <li>yoursite.wordpress.com<br>(upgrade for a customized domain)</li>
-            <li>hosted by WordPress</li>
-            <li>site maintenance by WordPress</li>
-            <li>easier to get up and running</li>
-            <li>no access to the code (without an upgrade)</li>
-            <li>theme options are included but cannot upload your own themes or use plugins</li>
-            <li>different plans ranging from free - $299 with added features 
-              <a href="https://learn.wordpress.com/get-started/#wpplan">See more info here</a>.
-            </li>
-          </ul>
-        </div>
-        <div class="col-2">
-          <p><a href="http://wordpress.org">WordPress.org</a></p>
-          <ul>
-            <li>you will need to register and pay for a domain </li>
-            <li>need to buy web hosting - self hosted</li>
-            <li>you are responsible for site maintenance</li>
-            <li>requires web development knowledge (how much depends on level of customization desired)</li>
-            <li>full control over themes files and code</li>
-            <li>more theme options or customize it yourself</li>
-            <li>1000s of plugins for adding features &amp; functionality or create your own</li>
-          </ul>
-        </div>
-        <hr style="clear:both;border-width:0;">
-        <p>Using the <strong>.com</strong> version is great when you're starting out since it's much easier to manage and is free.  You can also move a <strong>.com</strong> site to a <strong>.org</strong> site at any time.</p>
-        <p>Today we'll be exploring WordPress.com</p>
+        &ast;Paid upgrades available for additional customization. <!-- .element: class="note" --> [See more info here](https://learn.wordpress.com/get-started/#wpplan).  
+          
+        >Today we'll be exploring WordPress.com, so make sure you're logged into your account to follow along with the upcoming examples & exercises.
+      </script>
     </section>
     
-    <section id="wp-setup" class="slide" data-markdown>
+    <!-- <section id="wp-setup" class="slide" data-markdown>
       <script type="text/template">
-        ##Exercise - Account setup (10-15mins)
+        ##Exercise - Account setup (10-15mins) {to be moved}
         
         1. If you *do not* have a WordPress.com account, [follow these instructions](set-up.html).
       
         1. If you *do* have a WordPress.com account, take this time think about what you'd like to blog about and gather some images.  
           * use your own photos
           * choose from some sample images [here](images.zip) (zip file)
-          <!-- * choose from the sample images contained in today's learner files  
-            found in the **llc-intro-to-wordpress > images** folder. -->
           * use stock photography - here's a [list of resources](https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b) for free stock photography.
         
         <br>
@@ -244,9 +184,9 @@
         
         [Pixlr](https://pixlr.com/web) is a great free tool for image editing.      
       </script>
-    </section>
+    </section> -->
     
-    <section class="slide title dashboard" data-markdown>
+    <section class="slide title dashboard" data-markdown data-toc>
       <script type="text/template">
         #The Dashboard
       </script>
@@ -254,17 +194,13 @@
     
     <section class="slide resized" data-markdown>
       <script type="text/template">
-        ##The Dashboard
+        #The Dashboard
 
-        The Dashboard allows access to options such as adding blog posts,  pages, changing themes, uploading media and adding premium features and more. 
+        Logging into the WordPres admin area will automatically take you the the Dashboard. Access your Dashboard in two ways:
         
-        Access your Dashboard in two ways:
+        **Option 1:**  Log in using your domain name and add `/wp-admin/` to the end of the URL. It should look like this: `https://yoursitename.wordpress.com/wp-admin/`
         
-        **Option 1:**  Log in using your domain name and add `/wp-admin/` to the end of the URL.  
-        It should look like this: `https://yoursitename.wordpress.com/wp-admin/`
-        
-        **Option 2:** https://wordpress.com  
-        This login will take you to your **Reader**. Select **My Sites** to get to your WordPress site.
+        **Option 2:** Log into https://wordpress.com - This will take you to your **Reader**. Select **My Sites** to get to your WordPress site.
 
         ![](framework/img/workshop/dashboard-login-1.png)
         
@@ -272,28 +208,26 @@
         Then choose **WP Admin** to access the Dashboard.
 
         ![](framework/img/workshop/dashboard-login-2.png)
-        
-        Note that the Dashboard looks and the works the same in both the **.com** and **.org** version of Wordpress, though some of the options may be different based on customizations.
-      </script>
-    </section>
-    
-    <section class="slide resized" data-markdown>
-      <script type="text/template">
-        ##The Dashboard: Home
-        
-        Logging into the admin area will automatically take you the the Dashboard Home page. Here, you can view your drafts, check out basic stats, respond to comments and get a general overview of your blog. 
-        
-        Click on any of the options to see more detail. 
-
-        ![Wordpress Dashboard](framework/img/workshop/dashboard.png)
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## The Dashboard
+        #The Dashboard
         
-        The various menus contain links to different areas of the CMS to edit content, change how your blog looks and add/edit other features. There are **lots** of menu options but today we'll focus on the most common options to get you up and running.  Some areas to be covered are:
+        Once you are logged into the admin area, you'll see the Dashboard home page. Click on any of the options to see more detail. 
+
+        ![Wordpress Dashboard](framework/img/workshop/dashboard.png)
+        
+        Note that the Dashboard looks and the works the same in both the **.com** and **.org** version of Wordpress, though some of the options may be different based on customizations.
+      </script>
+    </section>
+    
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #WordPress Menu Options
+        
+        There are **lots** of menu options but today we'll focus on the most common options to get you up and running such as:
         
         * setting up a public profile
         * configuring basic settings
@@ -305,12 +239,13 @@
       </script>
     </section>
     
-    
-    <section class="slide resized" data-markdown>
+    <section class="slide" data-markdown>
       <script type="text/template">
-        ##Class Exercise: Set up your Public Profile
+        #Class Exercise: Set up your Public Profile
         
-        Your WordPress.com account is also your WordPress public profile. Choose how your name displays as the author of a post or when you comment on another WordPress site. You can also upload an image for your Gravatar (Globally Recognized Avatar) for your profile. All of the information is optional, so only fill in what you’d like.
+        Your WordPress.com account is also your WordPress public profile. Choose how your name displays as the author of a post or when you leave comments on another WordPress site. 
+        
+        You can also upload an image for your Gravatar (Globally Recognized Avatar) for your profile. All of the information is optional.
         
         In the menu, near the bottom, select **Users > My Profile** to update.
         
@@ -318,119 +253,125 @@
       </script>
     </section>
     
-    <section class="slide" data-markdown>
+    <section class="slide resized" data-markdown>
       <script type="text/template">
-        ##Class Exercise: Configure basic site settings
+        #Class Exercise: Configure basic site settings
 
-        When setting up your account, the default Site Title is your username. This can easily be changed.  
-        In the dashboard, go to **Settings > General**, enter a title and a tagline and **Save Changes**. 
+        To change your **Site Title** and tagline, go to **Settings > General**. You can also set your timezone, date/time format and language options here.
         
-        ![](framework/img/workshop/dashboard-title-tagline.png) <!-- .element: width="80%" -->
+        ![](framework/img/workshop/dashboard-general-settings.png)
         
-        You can also set your timezone, date/time format and language options here as well.
-        <!-- ![](framework/img/workshop/dashboard-general-settings.png) -->
+        Remember to select **Save Changes**!
       </script>  
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##View your site
+        #View your site
         
-        Now that you've made some changes, how do you actually *see* your site?  
+        How do you actually *see* your site? 
         
         Go to **My Sites > View Site**.
         
         ![](framework/img/workshop/dashboard-view-site.png)
+        
+        The page layout of your WordPress site will vary based on the theme. 
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##View your site
+        #View your site
         
-        The page layout will vary based on the theme. Also, the admin bar and *edit* link only shows when logged into your Wordpress account to allow access to the admin options.  Your blog readers will not see these options. This is what the sample LLC site looks like using the "Edin" theme. 
+        Note that the admin bar and *edit* link only shows when you're logged into your Wordpress account. 
         
         ![](framework/img/workshop/view-site.png) <!-- .element: width="70%" -->
         
-        Wait! Where's the tagline?
+        This is what the sample LLC site looks like using the "Edin" theme. 
         
+        >Wait! Where's the tagline?
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Theme support
+        #Theme support
         
         Some themes don't include support for certain types of content (e.g. the tagline in the previous example). When choosing a theme, you can view and test out different customization options. 
         
-        Let's talk about the different ways to add content first, before choosing & customizing a theme. To get back to your admin dashboard, select **My Site > WP Admin**
+        Let's talk about the different ways to add content first, before choosing a theme. To get back to your admin dashboard, select **My Site > WP Admin**
         
         ![](framework/img/workshop/back-to-admin.png)
+        
+        **Pro tip!** Open the Admin panel on one browser tab and the WordPress site in another browser tab to avoid switching back and forth.
       </script>
     </section>
     
-    <section class="slide title" data-markdown>
+    <section class="slide title" data-markdown data-toc>
       <script type="text/template">
-        #Adding content
-        ##Pages & Posts
+        #Adding Content
+        ##Pages, Posts & Images
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Pages
+        #Pages
         
-        WordPress includes an option for creating standard static pages.  
-        The **Pages** option can be used for "one-off" type of content such as an about or contact page.
+        WordPress includes an option for creating static pages. This is best for "one-off" pages of content such as an "about" or "contact" page that do not need to be date specific.
         
-        To add a page, select **Pages > Add New**
+        To add a page, go to **Pages > Add New**
         
         ![](framework/img/workshop/pages-1.png) <!-- .element: width="310" -->
         
-        After adding the content, click the **Update** button.  The URL will be generated after the page is saved and is referred to as the **Permalink**.  Remember to **Update** every time an edit is made. 
+        After adding the content, click the **Update** button.  The URL will be generated after the page is saved and is referred to as the **Permalink**.
         
         ![](framework/img/workshop/pages-2.png)<!-- .element: width="80%" -->
+        
+        **Pro tip!** Remember to **Update** every time an edit is made. 
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Publish Options
+        #Publish Options
         
-        There also various publish options. Click the **Edit** link in the **Publish** box to see the different options.
+        ![](framework/img/workshop/publish-options.png)<!-- .element: class="left" style="margin: 0 20px 40px 0;"--> 
         
-        ![](framework/img/workshop/publish-options.png)<!-- .element: width="310" -->
+        There also various publish options. 
         
-        Extra resource: https://en.support.wordpress.com/using-wordpress-to-create-a-website/
+        Click the **Edit** link in the **Publish** box to see the different options.
+
+        ---
+        ###Extra Resource
+        
+        https://en.support.wordpress.com/using-wordpress-to-create-a-website/
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Posts
+        #Posts
         
-        To use WordPress for blog posts, **Posts** are used to create time-based content entries. Posts can also be organized by **categories** and/or **tags**. 
+        To use WordPress for blog or time-based posts, use the **Posts** menu option. Posts can also be organized by **categories** and/or **tags**. 
         
-        These options can be found under the Post menu.  Also, note that the permalink is automatically generated as well but since posts are time-based, the date of the post is included in the URL.
+        Note that the generated permalink includes the date.
         
         ![](framework/img/workshop/dashboard-posts.png)
         
-        By default, blog posts will appear on the home page, your domain URL.  
-        (e.g. https://ladieslearningcode.wordpress.com/)
-        
-        It is also possible to use a static page as the home page. More on changing this setting later.
+        By default, a listing of blog posts will appear on the home page. More on changing this setting in part two of the course.
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Post Options: Categories
+        #Post Options: Categories
 
-        **Categories** allow for a broad grouping of post topics. Blog posts should fit into a single category.  For example, a food blog can have recipes in the following categories: Breakfast, Lunch or Dinner.
+        **Categories** allow for a broad grouping of post topics and can be found under **Posts > Categories**.
         
-        To add categories, go to **Posts > Categories **
+        For example, a food blog can have recipes in the following categories: Breakfast, Lunch or Dinner.
         
-        Sub-categories can also be created by choosing an option listed under **Parent**.
+        Sub-categories can also be created by choosing a **Parent** option.
 
         ![](framework/img/workshop/dashboard-categories.png)
       </script>
@@ -438,7 +379,7 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Post Options: Categories
+        #Post Options: Categories
         
         Categories can also be added when editing a Post as well.
           
@@ -448,18 +389,27 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Post Options: Tags
+        #Post Options: Tags
         
-        **Tags** are best used to create groups of content that can apply to multiple categories and be more specific. This gives people the ability to navigate your site quickly and find exactly what they want.  For example, a frittata recipe can have the following category and tags:
+        **Tags** are best used to create groups of content that can apply to multiple categories and be more specific. For example, a frittata recipe can have the following category and tags:
         
         * Category: Breakfast 
         * Tags: eggs, kid friendly, under 30mins
         
         Just like categories, tags can be added from the menu or when editing a post.  But unlike categories, tags *cannot* have a hierarchy.
         
-        ![](framework/img/workshop/dashboard-tags.png) <!-- .element: width="600" -->
+        ![](framework/img/workshop/dashboard-tags.png)
         
-        In addition to adding new tags from the post, existing tags will show with an underline in the *add* field.  Click on "Choose from the most used tags" to see tags that have been used in other posts.
+      </script>
+    </section>
+    
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Post Options: Tags
+        
+        In addition to adding new tags from the post, existing tags will show with an underline in the *add* field.  
+        
+        Click on "Choose from the most used tags" to see tags that have been used in other posts.
         
         ![](framework/img/workshop/tags.png) <!-- .element: width="300" -->
       </script>
@@ -467,41 +417,47 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Featured image
-        
-        For both posts and pages, you can also set a featured image.  This will make your blogs more visually appealing.  We'll talk more about the different ways to use images later but for now, you can find this feature on both the post and pages edit screen.
-        
-        ![](framework/img/workshop/featured-img.png) <!-- .element: width="850" -->
-      </script>
-    </section>
-    
-    <section class="slide list-font-default" data-markdown>
-      <script type="text/template">
-        ## Group Exercise - Brainstorm (15mins)
+        #Group Exercise - Brainstorm (15mins)
 
-        In groups of 2 or 3, brainstorm and discuss the below points with your neighbors.
+        In groups of 2 or 3, brainstorm and discuss the below points.
         
         1. Think of a blog post you'd like to write about.
         1. What category and tags would you use?
+
+        >Share your idea with the class!
       </script>
     </section>
     
     <section class="slide resized" data-markdown>
       <script type="text/template">
-        ## Adding content: Visual editor
+        #Adding content: Visual editor
 
-        When adding content into your Post or Page, the default visual editor uses a WYSIWYG editor (what you see is what you get) to format the content.  Click on the **Toolbar Toggle** to show all of the editing options.  Hover over any icon to see a short description of what each tool is used for.
+        When adding content into your Post or Page, the default visual editor uses a WYSIWYG (what you see is what you get) editor to format the content.
+        
+        Click on the **Toolbar Toggle** to show all of the editing options.  Hover over any icon to see a short description of what each tool is used for.
         
         ![](framework/img/workshop/adding-content-wysiwyg.png)
       </script>
     </section>
     
+    <section class="slide resized" data-markdown>
+      <script type="text/template">
+        #Images & Featured image
+        
+        For both posts and pages, you can set an image in the post or page itself.
+        ![](framework/img/workshop/post-page-img.png)
+        
+        Another option is to use a featured image. Where the feature image displays will depend on the theme.
+        
+        ![](framework/img/workshop/featured-img.png)
+      </script>
+    </section>
+    
     <section class="slide side-by-side" data-markdown>
       <script type="text/template">
-      ## Adding content: Text
+      #Adding content: Text
       
-      When using the Visual editor, the content entered automatically gets converted into HTML.  
-      You can also edit or add your own HTML using the Text editor. 
+      When using the Visual editor, the content entered automatically gets converted into HTML. You can also edit or add your own HTML using the Text editor. 
       
       ![](framework/img/workshop/editor-visual.png)
       ![](framework/img/workshop/editor-text.png)
@@ -513,7 +469,7 @@
       </script>
     </section>
     
-    <section class="slide title" data-markdown>
+    <section class="slide title" data-markdown data-toc>
       <script type="text/template">
         #HTML Crash Course!
       </script>
@@ -521,14 +477,14 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## HTML Syntax
+        #HTML Syntax
         
-        HTML (HyperText Markup Language) is used to assign meaning to content using *tags* to create HTML elements to tell the browser how to interpret the content.
+        HTML (HyperText Markup Language) uses *tags* to create HTML elements to tell the browser how to interpret the content.
 
             <p>This is a paragraph because it's using a "p" tag.</p>
         
         * angled brackets `< >` represent HTML tags  
-        * almost all elements have an *opening* tag `<p>` and a matching *closing* tag `</p>`
+        * most elements have an *opening* tag `<p>` and a matching *closing* tag `</p>`
         * Note the forward slash `/` used in the closing tag.
         
         ![](framework/img/workshop/keyboard-html.png) <!-- .element: width="60%" -->
@@ -537,27 +493,29 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## HTML Headings
+        #HTML Headings
         
-        There are 6 heading tags ranging from `<h1>` to `<h6>`.   
-        These heading levels follow a hierarchical structure.
-
-            <h1>Most Important Heading</h1>
-            <h2>Second Most Important Heading</h2>
-            ...
-        ---    
-            <h1>All About Apples</h1>
-            <h2>Apple varieties</h2>
-            <h3>Red Apples</h3>
-            <h3>Green Apples</h3>
+        There are six heading tags ranging from `<h1>` to `<h6>` thafollow a hierarchical structure.
+        
+        ```
+        <h1>Most Important Heading</h1>
+        <h2>Second Most Important Heading</h2>
+        ... etc
+        ```
+        ```
+        <h1>All About Apples</h1>
+        <h2>Apple varieties</h2>
+        <h3>Red Apples</h3>
+        <h3>Green Apples</h3>
+        ```
       </script>
     </section>
         
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## HTML Links
+        #HTML Links
             
-        In HTML, use the `<a>` tag for links. Wrap the tag around the word(s) to be used as the target for the link. The below example shows the HTML as well as how it displays in the browser. 
+        HTML uses an `<a>` tag for links. Wrap the tag around the word(s) to be used as the target for the link.
           
             Click <a>here</a> for more info.
             
@@ -565,40 +523,51 @@
           Click <a style="border:none;">here</a> for more info.
         </div>
         
-        Some tags require more information in the form of *attributes*. If you click the above example link, it won't go anywhere. Links require the addition of an `href` *attribute* to specify where to link to. 
+        Links require the addition of an `href` *attribute* to specify where to link to. 
         
-        A `title` *attribute* is optional but can also be added to provide extra info about the link.  The content in the `title` *attribute* also appears as a "tool tip" when you hover over the link.
+        A `title` *attribute* is optional but can also be added to provide extra info about the link and also appears as a "tool tip" when you hover over the link.
 
             Click <a href="http://ladieslearningcode.com" title="Ladies Learning Code website">here</a> for more info.
         
         <div class="example" style="padding: 10px">
           Click <a style="border:none;" href="http://ladieslearningcode.com" title="Ladies Learning Code website">here</a> for more info.
         </div>
-      
       </script>
     </section>
     
     <section class="slide side-by-side" data-markdown>
       <script type="text/template">
-        ## HTML Paragraphs
+        #WordPress and HTML
         
-        Paragraphs are very common in HTML documents. However, adding HTML into the WordPress editor is a *little* different than writing pure HTML. Normally, paragraphs would be written like this:
+        Paragraphs are very common in HTML documents. However, adding HTML into the WordPress editor is a *little* different than writing pure HTML. 
         
-            <p>I'm a paragraph with only one sentence.</p>
-            <p>I'm another paragraph.  And I have more than one sentence! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias sequi voluptas voluptatem ipsam totam.</p>
+        Usually, paragraphs would be written like this:
         
-        In Wordpress, you don't need to add the `<p>` tags in either the visual **or** text editor. In the visual editor, select the paragraph option from the dropdown.  In the Text editor, just ensure you return/enter twice to add a space between the paragraphs.  They will automatically be converted into `<p>` tags via Wordpress magic!
+        ```html
+        <p>I'm a paragraph with only one sentence.</p>
+        
+        <p>I'm another paragraph.  And I have more than one sentence! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias sequi voluptas voluptatem ipsam totam.</p>
+        ```
+      </script>
+    </section>
+    
+    <section class="slide resized" data-markdown>
+      <script type="text/template">
+        #Paragraphs
+        
+        In WordPress, you don't need to add the `<p>` tags in either the visual **or** text editor. In the visual editor, select the paragraph option from the dropdown.  
         
         ![](framework/img/workshop/editor-visual-p.png)
+        
+        In the Text editor, just ensure you return/enter twice to add a space between the paragraphs.  They will automatically be converted into `<p>` tags via Wordpress magic!
+          
         ![](framework/img/workshop/editor-text-p.png)
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## HTML line break
-        
-        Line breaks are usually used to add a new line to a group of text where the division of lines are needed but not as a new paragraph. (e.g. poem or an address) Line breaks are created using the break tag `<br>`. 
+        # HTML line break
         
         A paragraph written like the example below will be rendered as one line because HTML doesn't read more than one white space or new lines.
         
@@ -623,7 +592,17 @@
           City, Province<br> 
           A3C 1H5
         </p>
-        But, like paragraphs, in the WordPress editor, break tags `<br>` are also not needed.  Just use the enter/return key *once* for a line break in either the visual or text WordPress editor.
+        
+      </script>
+    </section>
+    
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #HTML line break
+        
+        But like paragraphs, in the WordPress editor, break tags `<br>` are also not needed.  
+        
+        Just use the enter/return key *once* for a line break in either the visual or text WordPress editor.
 
         ![](framework/img/workshop/editor-line-break.png)
       </script>
@@ -631,7 +610,7 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## HTML & Wordpress
+        #HTML & Wordpress
         
         Even though the WordPress editor doesn't require some of these specific HTML tags, you can still add them. 
         
@@ -639,62 +618,73 @@
           
         Just note that it is not required and the visual editor can be used instead.
         
-        <br>
-        HTML Cheat Sheets:
-        
+        ---
+        ###Resources
         * http://www.smashingmagazine.com/2009/07/html-5-cheat-sheet-pdf/
         * http://www.simplehtmlguide.com/cheatsheet.php
       </script>
     </section>
     
-    <section class="slide list-font-default" data-markdown>
+    <section class="slide" data-markdown>
       <script type="text/template">
-        ## Exercise - Add some content (15mins)
+        #Exercise - Add some content (20mins)
         
-        We know writing takes time so use some placeholder text for now! Here is a big list of placeholder text you can use: http://meettheipsums.com/ &mdash; We just need some content to work with for the upcoming theme exercises so don't worry about finding or changing your theme just yet. 
+        We know writing takes time so feel free to use some placeholder text and images for now! (Resources at the bottom of the slide.) 
         
         1. Add at least one page.  (e.g. About page)
-        2. Add at least two blog posts. Use categories and tags.
+        2. Add at least two blog posts with categories and tags.
         
-        Here's how your page may look (this example is still using the "Edin" theme).  Note how the different types of content appear (blog content, category, tags, etc).
-
-        ![](framework/img/workshop/exercise-content.png)
+        [Here's how your page may look](framework/img/workshop/exercise-content.png) (this example is still using the "Edin" theme).  Note how the different types of content appear (blog content, category, tags, etc).
+        
+        We need some content to work with for the upcoming exercises so don't worry about finding or changing your theme just yet.
+        
+        ---
+        ###Resources 
+        
+        * use your own photos
+        * OR choose from some sample images [here](images.zip) (zip file)
+        * OR use stock photography - here's a [list of resources](https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b)
+        * http://meettheipsums.com for placeholder text
+        * [Pixlr](https://pixlr.com/web) free tool for image editing
+        
+        You may need to resize your images. Large images may slow down your site and small images may get pixelated. We recommend sizing your "large" images around 800px wide. <!-- .element: class="note" -->
       </script>
     </section>
       
     <section class="slide resized" data-markdown>
       <script type="text/template">
-        ## Slug: Posts & Pages
+        # Slug: Posts & Pages
         
-        A WordPress **slug** is a few words used to describe a post, page, category, or tag within WordPress. 
+        A WordPress **slug** is used to describe a post, page, category, or tag. 
         
-        In posts and pages, the slug appears in the URL and is generated automatically based on the title. It can be changed manually to something different from the title but it's best to keep them simple and relevant. 
+        In Posts and Pages, the slug appears in the URL and is generated automatically based on the title. It can be changed manually to something different from the title but it's best to keep it simple and relevant. 
+        
+        Only the highlighted portion is classified as the slug and can be changed.
         
         Select **Edit** to change it manually.
         
         ![](framework/img/workshop/dashboard-slug-automatic.png)
-        
-        Only the highlighted portion is classified as the slug and can be changed.
-        
+
         ![](framework/img/workshop/dashboard-slug-edited.png)
       </script>
     </section>
     
-    <section class="slide" data-markdown>
+    <section class="slide resized" data-markdown>
       <script type="text/template">
-        ## Slug: Categories & Tags
+        #Slug: Categories & Tags
         
-        Slugs can also be used in categories and tags and are also automatically generated. 
-      
-        Note that the WordPress**.com** version does not have an option to manually update the slug for categories and tags but the WordPress**.org** version does.
+        Slugs can also be used in Categories and Tags.
         
-        Slugs can be found under the **Post > Categories** or **Post > Tags** menu.  Though your tag & category names can contain spaces and special characters, it will be converted to a dash for the slug to make it URL friendly.
+        Slugs can be found under the **Post > Categories** or **Post > Tags** menu.  
+        The tag & category names can contain spaces and special characters but for slugs, it will be converted to dashes to make it URL friendly.
         
         ![](framework/img/workshop/dashboard-slugs-tags-categories.png)
+        
+        Note that WordPress**.com** does not have an option to manually update the slug for categories and tags but WordPress**.org** does.
       </script>
     </section>
   
-    <section class="slide centered" data-markdown>
+    <section class="slide centered" data-markdown data-toc>
       <script type="text/template">
         # Wordpress Themes
         
@@ -704,15 +694,15 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## What is a WordPress Theme?
+        # What is a WordPress Theme?
 
         A theme provides all of the graphical styles for your site.  
         
-        WordPress.com provides hundreds of themes for you to choose from. They are HTML/CSS/JavaScript templates so you can get a functional website without writing any code.
+        WordPress.com provides hundreds of themes for you to choose from so you can get a functional website without writing any code.
         
         Most themes include:
 
-        * overall page layouts & colour scheme
+        * overall static page layouts & colour scheme
         * styles for blog posts and blog archives
         * typography styles
         * different types of widgets and where they are located on the page
@@ -721,7 +711,7 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Free & Paid Themes
+        #Free & Paid Themes
         
         So why would you learn to code or pay for a theme if there are so many free, functional templates to choose from?  Well, that all depends on how *unique* and *customized* you need your site to be.  
         
@@ -729,36 +719,38 @@
         
         If you're not ready to code yourself just yet but want more options, paid themes often offer premium plugins, more customization options and customer support.
         
-        <br>
-        With WordPress.com, [you cannot upload your own themes](https://en.support.wordpress.com/themes/adding-new-themes/), but you can still make some customizations to the themes that are available.  The **.com** version aims to keep things simple and require less technical maintenance, so this feature is not supported (but you can with the **.org** version). 
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Choosing a Theme
+        #WordPress.com & Themes
         
-        There a many different themes to choose from with different styles.  Here are some features and options to look for when picking a theme:
+        With WordPress.com, [you cannot upload your own themes](https://en.support.wordpress.com/themes/adding-new-themes/), but you can still make some customizations to the themes that are available.  
         
-        ###Responsive
-        Look for a responsive theme so the design can adapt to different screen sizes for various devices.  A separate mobile site or mobile plugin will not be needed to resize or rearrange content for different sized screens.
+        The **.com** version aims to keep things simple and require less technical maintenance, so this feature is not supported (but you can with the **.org** version). 
+      </script>
+    </section>
+    
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Choosing a Theme
         
-        ###Columns
+        Look for a **responsive** theme so the design can adapt to different screen sizes on various devices.
         
-        Columns are basic website design elements. They allow you to display your content in chunks that are visually appealing. For example, you can have a larger main content area and a sidebar or use a layout that look like magazines and newspapers with more equal column widths.
+        **Columns** allow you to display content in chunks that are visually appealing. For example, you can have a larger main content area and a sidebar or use equal column widths to give the look of a magazine/newspaper.
         
-        ###Page Layouts 
-        Layout determines the overall look and feel of your blog.  Consider how (or if) certain content is displayed such as the site title, subheading, tags, categories, main menu, etc.
+        **Page layout** determines the overall look and feel of your blog.  Consider how (or if) certain content is displayed such as the site title, subheading, tags, categories, main menu, etc.
       </script>
     </section>
     
     <section class="slide resized" data-markdown>
       <script type="text/template">
-        ##Choosing a Theme
+        #Choosing a Theme
         
-        Back in the dashboard, navigate to the **Appearance** menu option.  A sub-menu will appear to show all the appearance related options. In addition to picking a new theme, there are other options such as configuring widgets, customizing menus and the header, plus more.
+        Navigate to the **Appearance** menu.  In addition to picking a theme, there are other appearance options such as configuring widgets, menus, etc.
         
-        Let's look at **Themes** option first. The first theme that appears in the listing is your *active* theme. You can also filter the options to show only free or premium themes.
+        Let's look at the **Themes** option first. The first theme that appears in the listing is your *active* theme. You can also filter the options to show only free or premium themes.
         
         ![](framework/img/workshop/dashboard-themes.png)  
       </script>
@@ -766,40 +758,59 @@
     
     <section class="slide resized" data-markdown>
       <script type="text/template">
-        ##Choosing a Theme
+        #Choosing a Theme
         
         Hover over any of the other themes to activate, preview or see more details.
         
         ![](framework/img/workshop/theme-details-btn.png)
         
-        Clicking the **Theme Details** button will show the features included in that particular theme.
+        Clicking the **Theme Details** button will show the features included in the selected theme.
         
-        ![](framework/img/workshop/theme-details.png)  
+        ![](framework/img/workshop/theme-details.png)
+      </script>
+    </section>
+    
+    <section class="slide resized" data-markdown>
+      <script type="text/template">
+        #Choosing a Theme
           
         Select the **Preview** button from either screen to see how the theme looks with your content.  The options on the left menu contain customizations and will vary among different themes. 
         
         ![](framework/img/workshop/theme-preview.png) 
-        
-        <br>
+
         You can also access these theme customization options from the Dashboard under **Appearance > Customize**. To update the theme changes, select **Save & Activate**.
       </script>
     </section>
     
     <section class="slide list-font-default" data-markdown>
       <script type="text/template">
-        ## Exercise - Choose a theme
+        #Colours
         
-        Make sure to have some content and at least one featured image in a post and/or page to help see the the theme options.
+        Some themes include the option of adding colours using a **hex** value.  
         
-        Some themes will allow the option of adding your own colours using a **hex** value.  Hex values contain the number/hash symbol and 6 digits using the letters A-F and the numbers 0-9 and will looking something like this: `#ecf0f1`.  See below for colour resources.
+        Hex values contain the number symbol (`#`) and 6 digits using the letters A-F and the numbers 0-9 and will looking something like this: `#ecf0f1`.  
+        
+        See below for colour resources.
         
         * http://colours.neilorangepeel.com/
         * https://coolors.co/
+      </script>
+    </section>
+    
+    <section class="slide list-font-default" data-markdown>
+      <script type="text/template">
+        #Exercise - Choose a theme (15mins)
         
-        <br>
-        You will likely change themes as you add more actual content but take some time to explore the customizations and available options. (The LLC sample project uses the **Ecto** theme.)
+        Be sure to have some content and at least one featured image in a post and/or page to see how the theme options display the different kinds of content.
+        
+        You may change themes as you add more content but take some time to explore the customizations and available options. 
+        
+        (The LLC sample project uses the **Ecto** theme.)
       
-        Extra resource: https://en.support.wordpress.com/video-quick-start/#find-a-theme
+        ---
+        ###Resource
+        
+        https://en.support.wordpress.com/video-quick-start/#find-a-theme
       </script>
     </section>
     
@@ -809,38 +820,38 @@
       </script>
     </section>
     
-    <section id="custom-menu" class="slide resized" data-markdown>
+    <section id="custom-menu" class="slide resized" data-markdown data-toc>
       <script type="text/template">
-        ##Create a custom menu
+        #Create a Custom Menu
         
-        Menus are a list of links, usually displayed as the navigation for your site. You can choose from Pages or Categories from within your WordPress site or a custom link (can link to an external site).
+        Menus are a list of links, usually displayed as the navigation for your site. You can add Pages, Categories or a custom link to the navigation menu.
         
         The menu location may vary depending on the theme.  Some themes also offer additional menus such as social links menus.
 
         ![](framework/img/workshop/menus.png)
 
-        Extra resource: https://en.support.wordpress.com/video-quick-start/#create-a-menu
+        ---
+        ###Resource
+        * https://en.support.wordpress.com/video-quick-start/#create-a-menu
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Create a Custom Menu 
+        #Create a Custom Menu 
         
-        You can also reorder the menus by dragging the menu options as well as make submenus by dragging it underneath another item.
+        Reorder the menus by dragging the menu options. Make submenus by dragging it underneath another item.
         
         ![](framework/img/workshop/menu-additions.gif)
         </menu>
       </script>
     </section>
     
-    <section class="slide resized" data-markdown>
+    <section class="slide resized" data-markdown data-toc>
       <script type="text/template">
-        ##Home page and Blog settings
+        #Home Page and Blog settings
         
-        By default, the blog posts will show as your home page (e.g. https://yoursite.wordpress.com/)
-        
-        Blog posts are listed in chronological order. [See example here](framework/img/workshop/homepage-default.jpg).
+        By default, the blog posts will show as your home page, listed in chronological order. [See example here](framework/img/workshop/homepage-default.jpg).
         
         What if you wanted your site to default to a different page and show the blog as a separate section?  You can do that!
         
@@ -850,13 +861,22 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Home page and Blog settings
-        ###Step 1: Create a blog page  
-        Create a new landing page for the blog posts.  Note the generated permalink.
+        #Home page and Blog settings
+        
+        ##Step 1: Create a blog page  
+        Create a new page for the blog posts.  Note the generated permalink. 
+        
+        **Do not add any content! We just need a landing page to direct the blog posts to.**<!-- .element: class="note" -->
         
         ![](framework/img/workshop/homepage-blog.jpg)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Duplicated pages/posts
         
-        If you see a version number in your permalink, like **blog-2**, that just means there is already a page with the same name.  
+        If you see a version number in your permalink, like **blog-2**, that means there is already a page/post with the same name.
         
         ![](framework/img/workshop/duplicate-page.png)
         
@@ -866,54 +886,58 @@
       </script>
     </section>
     
-    <section class="slide resized" data-markdown>
+    <section class="slide" data-markdown>
       <script type="text/template">
-        ##Home page and Blog settings
-        ###Step 2: Change the settings
+        #Home page and Blog settings
+        ##Step 2: Change the settings
         
-        Under **Settings > Reading**, select a page to show as the *Front page* (your homepage) and blank landing page you created for the blog under *Posts page*.  
+        Under **Settings > Reading**, select a page to show as the *Front page* (your homepage) and the landing page for the blog under *Posts page*.  
         
         ![](framework/img/workshop/homepage-custom.jpg)
+      </script>
+    </section>
+    
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #General Tips & Tricks
         
-        There are many other options you can customize in this section.  Feel free to explore and remember to select the **Save Changes** button at the very bottom of the page.
+        **Clear your browser's cache.**
+        
+        When visiting a webpage, your browser temporarily stores items for future use to make the page load faster when you visit it again.
+        
+        If you are making multiple edits in a short amount of time, you may need to clear the browser's cache to delete the stored files with your updates.  
+        
+        ---
+        ###Resource
+        [www.refreshyourcache.com](http://www.refreshyourcache.com/en/home/)
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##General Tips & Tricks
+        #General Tips & Tricks
         
-        **Clear your browser's cache**:
+        **Preview your changes.**
         
-        When visiting a webpage, your browser temporarily stores items for future use to make the page load faster when you visit it again.
+        Since all the changes are made "live" on the site, using various publish options will allow you to continue to make changes without your users seeing it before it's ready. 
         
-        If you are making multiple edits in a short amount of time, you may need to clear the browser's cache to delete the stored files with your new files.  
+        ![](framework/img/workshop/publish-options-tips.png) <!-- .element: class="left" -->
         
-        See more info here about refreshing the cache for different browsers: http://www.refreshyourcache.com/en/home/
-      </script>
-    </section>
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        ##General Tips & Tricks
-        
-        **Preview your changes**:  
-        
-        Since all the changes are made "live" on the site, using various publish options will allow you to continue to make changes without your users seeing it before you're ready. You can:
+        You can:
         
         * preview the changes before publishing
         * publish the page/post as a draft
         * change the visibility option
-        
-        ![](framework/img/workshop/publish-options-tips.jpg)        
       </script>
     </section>
     
     <section class="slide resized" data-markdown>
       <script type="text/template">
-        ##General Tips & Tricks
+        #General Tips & Tricks
         
-        **Changing themes & menus**:  
-        If you change your theme, you may have to go back to your **Appearance > Menus** to add in the Menu Settings in again.
+        **Changing themes & menus.**
+        
+        If you change your theme, you may have to go back to **Appearance > Menus** to add in the Menu Settings in again.
         
         ![](framework/img/workshop/change-theme-menu.png)
         
@@ -925,7 +949,7 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Exercise - Update Your Menu (20mins)
+        #Exercise - Update Your Menu (20mins)
         
         Create or update the menu for your site.  
         For reference, follow the directions from the [previous few slides](slides.html#custom-menu).
@@ -937,7 +961,7 @@
       </script>
     </section>
     
-    <section class="slide title content-king" data-markdown>
+    <section class="slide title content-king" data-markdown data-toc>
       <script type="text/template">
         #Blogging Tips & Tricks
         ##Content is king!
@@ -946,13 +970,23 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## What to Blog About: Finding a Niche
+        # What to Blog About: Finding a Niche
 
-        **Challenge**: The internet already has gazillions of blogs out there, and most of the popular ones deal mostly with general ideas, general niches
+        **Challenge**:  
+        The internet already has gazillions of blogs out there and most of the popular ones deal mostly with general ideas, general niches.
 
-        **Solution**: Focus on one small topic, just write about that small topic and promote the heck out of it. People who are interested in that topic will surely land on your “specialty blog” rather than on “general blogs” out there. Write about one thing, and do it really well.
+        **Solution**:  
+        Focus on one small topic, just write about that small topic and promote the heck out of it. People who are interested in that topic will surely land on your “specialty blog” rather than on a “general blog.” 
         
-        <br>
+        Write about one thing, and do it really well.
+        
+      </script>
+    </section>
+    
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # What to Blog About: Finding a Niche
+        
         Here’s an example of finding a niche:
 
         **General theme**: Health & Fitness  
@@ -962,41 +996,124 @@
 
         **General theme**: Health & Fitness    
         **Smaller niches**: Sports  
-        **Niche within a niche**: Tennis, badminton, swimming, karate, and other sports that you can think of. 
+        **Niche within a niche**: Tennis, badminton, swimming, karate, etc. 
       </script>
     </section>
 
     <section class="slide niche-blogs" data-markdown>
       <script type="text/template">
-        ## What to Blog About: Finding a Niche
+        # What to Blog About: Finding a Niche
         
-        Niche blogs make it easier to monetize your blog once you build up a solid following.
-
-        A few successful niche blogs:
+        Niche blogs make it easier to build up a solid following. Here's an example of a couple successful niche blogs:
         
-        <div class="col-3">
+        <div class="col-2">
           [Smitten Kitchen](http://smittenkitchen.com/) - Personal cooking in a small kitchen
           ![](framework/img/workshop/smitten-kitchen.jpg)
         </div>
-        <div class="col-3">
-          [Farmville Freak](http://farmvillefreak.com/) -  Hub of information for Farmville fans
-          ![](framework/img/workshop/farmville-freak.jpg)
-        </div>
-        <div class="col-3">
+        <div class="col-2">
           [Jezebel](http://jezebel.com/) - Celebrity, Sex, Fashion for Women. Without Airbrushing.  
           ![](framework/img/workshop/jezebel.jpg)
         </div>
       </script>
     </section>
     
+    <section class="slide no-bullet-list" data-markdown data-toc>
+      <script type="text/template">
+        #Types of Bloggers
+
+        - The part-time professional
+        	- uses blogging to supplement income
+        - The hobbyist
+        	- Blogs for fun and doesn't earn an income, personal musings
+        	- 60% spend less than three hours a week blogging
+        - The full-time professional
+        	- Blogs as a full-time job
+        - The corporate
+        	- Blogs as part of their full-time job or full time for an organization
+        	- Makes up 8% of blogs
+        - The entrepreneur
+        	- Blogs for a company they own
+        	- Makes up 13% of blogs
+
+        ---
+        ###Resource
+        [Can I Really Make a Living by Blogging?](http://lifehacker.com/can-i-really-make-a-living-by-blogging-1537783554)
+      </script>
+    </section>
+    
+    <section class="slide no-bullet-list" data-markdown data-toc>
+      <script type="text/template">
+        #Money, Money, Money!
+
+        Being a successful blogger is essentially starting your own business. You're in for the long haul, and it will be some time before you see any return on your investment. Of [ProBlogger.net](http://ProBlogger.net) readers:
+
+        - 10% make $0 a month
+        - 28% make under $10
+        - 25% make $10-$99
+        - 17% make $100-$499
+        - 7% make $500-$999
+        - 9% make $1,000-$9,999
+        - 4% make $10,000+	
+
+        ---
+        ###Resource
+        
+        [Can You REALLY Make Money Blogging? [7 Things I Know About Making Money from Blogging]](http://www.problogger.net/archives/2012/11/28/can-you-really-make-money-blogging-7-things-i-know-about-making-money-from-blogging/)
+      </script>
+    </section>
+    
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #How do you monetize a blog?
+
+        - Sell products
+        - Continuity programs (e.g. premium content, communities, coaching)
+        - Affiliate marketing
+        - Providing services
+        - Advertising
+        - Combinations of income streams
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #There are no formulas!
+
+        But here's some advice from [Amy Lynn Andrews](http://amylynnandrews.com/how-to-make-money-blogging/):
+
+        1. Establish your home base
+        2. Produce valuable content
+        3. Build relationships
+        4. Grow your platform
+        5. Choose and implement streams of income
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #More Advice
+        
+        [Jon Morrow](http://boostblogtraffic.com/make-money-blogging/) advises:
+
+        If you're an independent blogger &mdash; ignore SEO (search engine optimization) for the first year. When your blog is new, the most efficient uses of your time fall into three broad categories:
+
+        - Building relationships with influencers (including guest blogging)
+        - Creating content worth linking to
+        - Selling your products and services
+        	
+        If you do these well, you'll get search traffic without doing anything.
+      </script>
+    </section>
+    
     <section class="slide list-font-default" data-markdown>
       <script type="text/template">
-        ## Group exercise: Finding a Niche (20mins)
+        # Group exercise: Finding a Niche (20mins)
         
         For this exercise, practice finding a niche for your blog by brainstorming and doing some research.
         
         1. In groups of 2 or 3, narrow your given niche.
-        1. Do some research online and come up with a micro-niche that has not yet been covered. Get specific!  i.e./ Tennis for weight loss, fashion for New England females
+        1. Do some research online and come up with a micro-niche that has not yet been covered. Get specific!  
+        (e.g. Tennis for weight loss, fashion for New England females)
         1. Share your micro-niche with the class.
       </script>
     </section>
@@ -1004,7 +1121,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Exercise: Understand your Audience (10mins)
+        #Understand your Audience
 
         Having a clear understanding of your target audience is your key to success. Consider what you know about your target audience and their interests while you're coming up with a topic for your blog post.
 
@@ -1018,38 +1135,45 @@
         
         Create Your Persona:
 
-        * List the characteristics of your target audience and create a specific persona 
+        * List the characteristics of your target audience and create a persona 
         * Be specific! List age, gender, geographic area, education, marital status, interests, lifestyle characteristics - the more details, the better! 
-        * Share with your neighbors & the class
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Capture Their Attention
+        #Capture Their Attention
 
-        Grab your reader’s attention in the intro. Tell a story or a joke, be empathetic, or grip the reader with an interesting fact or statistic. Then describe the purpose of the post and explain how it will address a problem the reader may be having.
+        Grab your reader’s attention in the intro. 
+        
+        Tell a story or a joke, be empathetic, or grip the reader with an interesting fact or statistic. Then describe the purpose of the post and explain how it will address a problem the reader may be having.
 
         Use the journalism model of the “inverted pyramid.” Start with the content that is most important to your audience, and then provide additional details.
+      </script>
+    </section>
+      
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Capture Their Attention
         
         Examples of catchy leads (ledes):
+        <br>
+        <div class="example">
+          <p>Have you ever wondered how you would survive if you found yourself alone in the wilderness? How would you defend yourself against predators? What would you eat? Where would you find water?</p>
+        </div>
         
-        >Have you ever wondered how you would survive if you found yourself alone in the wilderness? How would you defend yourself against predators? What would you eat? Where would you find water?
-        
-        ---
-        >“What am I doing wrong?” I whispered to the computer screen.
-        >A part of me wanted nothing more than to go to bed and forget about blogging forever.
-        >And yet, there I was, hunched over the computer, as I dug through my traffic stats for the millionth time. Somewhere inside was the answer to why I wasn’t getting more traffic, and I was going to find it.
+        <div class="example">
+          <p>“What am I doing wrong?” I whispered to the computer screen. A part of me wanted nothing more than to go to bed and forget about blogging forever. And yet, there I was, hunched over the computer, as I dug through my traffic stats for the millionth time. Somewhere inside was the answer to why I wasn’t getting more traffic, and I was going to find it.</p>
+        </div>
       </script>
     </section>
     
     <section class="slide side-by-side" data-markdown>
       <script type="text/template">
-        ##Organize Your Content
+        #Organize Your Content
 
-        Organize the info to make it digestible and easy to read.  Use sections, lists, tips, whatever is most appropriate.  Before you start writing, know which points you want to cover and the best order in which to do it.
-
-        Chunk your content to make it more scannable. Break it into manageable sections.  
+        Organize the info to make it digestible and easy to read. Chunk your content to make it scannable by breaking up long paragraphs or using lists.
+        
         In the example below, which one is easier to read?
         
         ![](framework/img/workshop/sectioning-content-2.jpg)
@@ -1059,26 +1183,30 @@
       
     <section class="slide list-font-smaller" data-markdown>
       <script type="text/template">
-        ##Exercise: Come Up with Great Topics (10mins)
+        #Coming Up with Great Topics
         
-        Choose a working title for your next blog post - you can refine your title later.
-
-        Develop a blog post outline:
-
-        1. Write down all the things you want your readers to get out of the article - brain dump!
-        1. Break up those takeaways into larger sections - take that jumble of ideas and place them into overarching sections (some suggest 3-4 sections as a benchmark)
-        1. Add more takeaways to some sections - your outline may look weird, but that’s ok!
-        1. Revise, remove, and reorganize details in each section - reorganize the information to tell the most logical story
-        1. Spruce up the outline with any additional details, anecdotes or information that you don't want to forget while writing (especially important if you write the post at a later date)
+        1. Choose a working title for your blog post - you can always refine your title later.
+        1. Develop a blog post outline &mdash; Write down all the things you want your readers to get out of the article - brain dump!
+        1. Take that jumble of ideas and place them into sections (some suggest 3-4 sections as a benchmark)
+        1. Add more takeaways to some sections.
+        1. Revise, remove, and reorganize details in each section - reorganize the information to tell the most logical story.
+        1. Spruce up the outline with any additional details, anecdotes or information that you don't want to forget while writing.
         
-        Popular post types:
+      </script>
+    </section>
+      
+    <section class="slide list-font-smaller" data-markdown>
+      <script type="text/template">
+        #Popular post types
 
         * The How-To Post 
         * The List-Based Post 
         * The Curated Collection Post
         * Interview With An Expert
         
-        Resource:<!-- .element: class="footnote" --> http://blog.hubspot.com/marketing/how-to-write-blog-post-outline 
+        ---
+        ###Resources
+        http://blog.hubspot.com/marketing/how-to-write-blog-post-outline 
       </script>
     </section>
     
@@ -1092,53 +1220,42 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ##Write, Write, Write! 
+        #Write, Write, Write! 
         
-        Write about what you already know, and if necessary, do additional research to gather more information, examples, and data to back up your points. Don’t forget to provide proper attribution when using external sources. 
+        Write about what you already know. Be yourself!  
+        Tell your story and be authentic.
 
-        * Be yourself! Tell your story and be authentic.
+        * If necessary, do additional research to gather more information, examples, and data to back up your points.
+        * Provide proper attribution when using external sources. 
         * Recommended post length - 200 to 1000+ words.
         * Edit and proofread - then do it again!
-        * Develop clear calls to action. A few examples:
-          * Subscribe to our newsletter
-          * Get a quote
-          * Learn more
-          * Buy a service
-          * Leave a comment
-          * Download an ebook
+        * Develop clear calls to action. (e.g. Subscribe to our newsletter, Get a quote, Learn more, Buy a service, Leave a comment, etc)
+      </script>
+    </section>
+    
+    <section class="slide no-bullet-list" data-markdown>
+      <script type="text/template">
+        # Create an Editorial Calendar
+
+        Set a schedule and keep to it. Categorize your content according to genres.
+        
+        * Some examples:
+          * event announcements
+          * new product release 
+          * how-to pieces 
+          * notable interviews
+
+        Publish minimum 1 post per week & plan it in advance.
+
+        Use tools like Google Calendar or a spreadsheet. The <!-- .element: class="footnote" -->[Editorial Calendar Wordpress plugin](https://wordpress.org/plugins/editorial-calendar/) makes it possible to see all your posts and drag and drop them to manage your blog (But reminder, plugins are only available in self-hosted Wordpress sites.) 
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Create an Editorial Calendar
-
-        Set a schedule and keep to it - feed the beast!
-
-        Categorize your content according to genres. Some examples:
+        # The Power of Images & Video
         
-        * event announcements
-        * new product release 
-        * how-to pieces 
-        * notable interviews
-
-        Publish minimum 1 post per week.
-
-        Plan minimum 1-2 months in advance.
-
-        Use Google Calendar, spreadsheet, or content management software to help plan your schedule. 
-
-        The [Editorial Calendar Wordpress plugin](https://wordpress.org/plugins/editorial-calendar/) makes it possible to see all your posts and drag and drop them to manage your blog (Remember, plugins are only available in self-hosted Wordpress sites.)
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        ## The Power of Images & Video
-        
-        Visual appeal is crucial.
-        
-        In addition to breaking up you content into lists and digestable chunks, use images or infographics to visually represent ideas in the content.
+        Visual appeal is crucial. In addition to breaking up you content into lists and digestable chunks, use images or infographics to visually represent ideas in the content.
 
         Some options in Wordpress are:
         
@@ -1146,8 +1263,8 @@
         * static images
         * feature image
 
-        Here are some resources for royalty free images:
-        
+        ---
+        ###Resources
         * https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b
         * https://pixabay.com/
       </script>
@@ -1155,7 +1272,7 @@
     
     <section class="slide resized" data-markdown>
       <script type="text/template">
-        ## The Power of Images & Video
+        # The Power of Images & Video
 
         Videos add life to your blog posts and is great for SEO (search engine optimization). Embed third-party videos in WordPress blog posts or add your own from YouTube, Vimeo, DailyMotion & more.
         
@@ -1167,7 +1284,7 @@
     
     <section class="slide centered" data-markdown>
       <script type="text/template">
-        ## Promote Your Blog
+        # Promote Your Blog
         
         ![](framework/img/workshop/big-time-blogger.gif) <!-- .element: style="width: 800px;" -->
       </script>
@@ -1175,20 +1292,16 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Promote Your Blog
+        # Promote Your Blog
 
         There are millions of blogs out there. How do you make yours stand out and get noticed?
 
         **Don’t be afraid to self-promote.**
         
-        <br>
-        Here are some ways to promote your blog:
-        
         * Share posts on social media
         * Send invites to your blog
         * Create polls 
         * Invite comments and reply to them 
-        * Get audience feedback
         * Send out e-newsletters
         * Guest blog for more established blogs for linkbacks
       </script>
@@ -1196,17 +1309,14 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Search Engine Optimization 
+        # Search Engine Optimization 
         
-        SEO works to boosting visibility of a website or a web page in a search engine's unpaid results
-
-        Often referred to as "natural," "organic," or "earned" results
+        SEO works to boost visibility of a website or a web page in a search engine's unpaid results, often referred to as "natural," "organic," or "earned" results.
 
         Higher search rankings = more traffic
         
         Keywords are key! 
         
-        <br>
         The best keywords have:
         
         * Strong relevance: terms for which you have content to support
@@ -1218,85 +1328,87 @@
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## SEO Keywords
+        # SEO Keywords
 
-        Think about your keywords as search terms &mdash; how would someone looking for information on this topic search for it?
+        Think about your keywords as search terms &mdash; how would someone looking for information on this topic search for it? Brainstorm a list of the words and phrases a searcher might use to find your site or business.
 
-        Brainstorm a list of the words and phrases a searcher might use to find your site or business
-
-        Be specific! Instead of broad terms like “shoes” focus on “wedding shoes”, “pink suede ballerina flats” or “black patent leather high-heeled pumps” 
+        Be specific! Instead of broad terms like “shoes” focus on “wedding shoes,” “pink suede ballerina flats” or “black patent leather high-heeled pumps.”
 
         Use keywords and phrases in your web content that make it possible for people to find your site via search engines.
 
-        Hyperlink SEO keywords to relevant web pages and other blog posts in the series
+        Link to SEO keywords to relevant pages and blog posts in the series.
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## SEO Tips for Multimedia
+        # SEO Tips for Multimedia
 
         Search engines can’t “read” anything other than plain old text.
 
-        Place appropriate keywords throughout every aspect of your site: your titles, content, URLs, and image names.
+        Place appropriate keywords throughout every aspect of your site: your titles, content, URLs, and image file names.
 
-        Give media files clear, descriptive names.  Don’t forget to add more descriptive text (or meta data) to the “alt” attribute in the file’s tag.
-
-        Photos should be rendered in jpg format, logos should be gif files.
+        Give file names clear, descriptive names.  
+        
+        Don’t forget to add more descriptive text (or meta data) to the “alt” attribute in the image tag.
+        
+        ```
+        <img src="ladies-learning-code-logo.png" alt="Ladies Learning Code logo">
+        ```
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Next Steps & Resources
+        # More Blogging Resources
         
-        ###Blogging Tips 
         * [The Guardian Professional](http://www.theguardian.com/culture-professionals-network/culture-professionals-blog/2011/nov/17/top-tips-successful-blog) 
         * [Hubspot Blog](http://blog.hubspot.com/marketing/expert-blog-tips-inboundrank)
         * [Copyblogger](http://www.copyblogger.com/blog/)
+        * [Boost Blog Traffic](http://boostblogtraffic.com/)
+      </script>
+    </section>
+    
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Next Steps
         
-        ###Wordpress.org
         If you're thinking of taking your blog to the next level and switching to the self-hosted version of WordPress, check out the resources below.
           
         * [New To WordPress - Where to Start](https://codex.wordpress.org/New_To_WordPress_-_Where_to_Start) 
         * [Getting Started with WordPress](https://codex.wordpress.org/Getting_Started_with_WordPress)
-        * Register for Ladies Learning Code's [Intro to WordPress Theming](http://www.eventbrite.ca/e/toronto-wordpress-for-beginners-create-your-own-wordpress-theme-on-october-17th-tickets-17505028010) workshop
-        * [hover.com](http://hover.com/ladiescode) - Domain registration
-        * [dreamhost.com](http://www.dreamhost.com/r.cgi?2085384) - Domain and hosting - Use coupon code **LLC40** to get $40 off your registration!
+        * [dreamhost.com](http://www.dreamhost.com/r.cgi?2085384) - domain & hosting - Save $40 with promo code "LLC40"
+        * [hover.com](http://hover.com/ladiescode) - domain registration - Save 10% with the promo code "learningcode"
+        
+        Why keep your domains and hosting separate? [Learn more about Hover](http://ladieslearningcode.com/getting-hosted-domains-with-hover/).
+        
+        Explore more Ladies Learning Code workshops by following our [Roadmap](http://ladieslearningcode.com/roadmap/).
       </script>
     </section>
     
     <!-- Last slide -->
     <section class="slide last">
-      <h2>Thank you!</h2>
+      <h1>Thank you!</h1>
       <h2 class="heading-bg">
         <span>Introduction to</span><br>
         <span>Blogging & Wordpress</span>
       </h2>
       
-      <!-- instructor info -->
-      <!-- <h3><span>with</span> Emily Baillie</h3>
-      
-      <img class="instructor-img" src="framework/img/workshop/emily-baillie.jpg" alt="">
+      <!-- <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
+      <h2><span class="cursive">with</span> Instructor Name</h2>
       <ul>
-        <li><i class="fa fa-envelope"></i><a href="mailto:emily@compasscontent.ca">emily@compasscontent.ca</a></li>
-        <li><i class="fa fa-desktop"></i><a href="http://compasscontent.ca">www.compasscontent.ca</a></li>
-        <li><i class="fa fa-twitter"></i><a href="http://twitter.com/EmilyBaillie">@EmilyBaillie</a></li>
-      </ul> -->
-      
+        <li><a href="mailto:">hello@email.com</a></li>
+        <li><a href="#">mywebsite.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+       -->
       <br>
       <p>Happy Blogging!</p>
-      
-      <p class="attribution footnote">Slide presentation created with <a href="https://github.com/LeaVerou/csss">Lea Verou&rsquo;s CSS-based SlideShow System</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+      <p class="attribution">Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
     </section>
 
   </main><!-- cls main section -->
-
-  <footer>
-    <p class="license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.svg" /></a> by <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
-    <p class="instructions">Use the left <i class="fa fa-arrow-left"></i> and right <i class="fa fa-arrow-right"></i> arrow keys to navigate</p>
-  </footer>
-
+  
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="framework/scripts/slideshow.js"></script>
 
@@ -1308,10 +1420,9 @@
 
   <script src="framework/scripts/plugins/markdown/marked.js"></script>
   <script src="framework/scripts/plugins/markdown/markdown.js"></script>
-  <!-- <script src="framework/scripts/plugins/highlight/highlight.js"></script> -->
   <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-
+  <script src="framework/scripts/llc.js"></script>
   <script>
     var slideshow = new SlideShow();
 
@@ -1320,11 +1431,6 @@
     for(var i=0; i<snippets.length; i++) {
       new CSSSnippet(snippets[i]);
     }
-
-    // Adds "edit me" note to editable code areas
-    jQuery(document).ready(function(){
-      jQuery(".snippet").before("<span class=\"edit\">edit me</span>");
-    });
   </script>
 </body>
 </html>

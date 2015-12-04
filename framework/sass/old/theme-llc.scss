@@ -108,8 +108,14 @@ a {
 hr {
 	border: none;
 }
-p, ol, ul {
+p {
+	margin: 20px 0;
+}
+ol, ul {
   margin: 15px 0;
+}
+h2 + ul {
+	margin-top: 25px;
 }
 
 ol, ul {
@@ -325,8 +331,7 @@ table {
 
 
 /* Creates border for slide examples */
-.example,
-blockquote {
+.example {
 	border: 1px solid $gray-light;
 	padding: 0 15px;
 
@@ -339,9 +344,9 @@ blockquote {
 	}
 }
 blockquote {
-	margin: 0;
-	font-size: $font-size-default - 4;
+	margin: 35px 0 0 0;
 	background: #fff;
+	padding: 10px 20px;
 }
 
 /* Incremental slides */
@@ -406,6 +411,10 @@ header {
 		background: #ecf0f1;
 		margin: 0 -64px;
 		padding: 10px 64px 15px;
+		
+		strong {
+			text-decoration: underline;
+		}
 	}
 	.sponsor {
 		color: #ecf0f1;
