@@ -285,6 +285,7 @@ a.highlight {
 .slide {
   padding: 45px 64px;
   background-size: cover;
+  height: 100%;
   
   // Adds extra space to the bottom of the slides to allow 
   // presenters to scroll the page up so people in the back
@@ -343,6 +344,7 @@ a.highlight {
   }
   h1 {
     margin-bottom: 0px;
+    line-height: 1.1;
   }
   h2 {
     color: $gray;
