@@ -20,7 +20,12 @@ body {
   border-top: 4px solid $llc-pink;
   -webkit-font-smoothing: antialiased;
   background: #ecf0f1;
+  
+  @media (min-width: 1401px) {
+    font-size: $font-size-base + 6;
+  }
 }
+
 h2 {
   margin: 0;
 }
@@ -38,9 +43,8 @@ h1 {
   }
   code {
     font-size: inherit;
-    font-weight: normal;
-    background: none;
-    text-transform: lowercase;
+    color: inherit;
+    font-family: inherit;
   }
 }
 h2 {
@@ -67,47 +71,29 @@ h6 {
   margin: 5px 0;
 }
 a {
-  color: $llc-pink;
-  text-decoration: none;
   outline: none;
+  color: inherit;
 
   &:hover {
-    color: $gray;
+    color: $llc-pink;
+    text-decoration: none;
   }
 }
 hr {
   border: none;
   border-top: 1px solid $gray-light;
   clear: both;
-}
-ul, ol {
-  padding: 0;
-    
-  li {
-    margin-bottom: 6px;
-    margin-left: 24px;
-  }
-  ol, ul {
-    font-size: $font-size-sm;
-    width: 90%;
-    margin: 5px 0 20px;
-  }
-}
-
-ol > li {
-  margin-bottom: 15px;
-  margin-left: 40px;
-}
-ul {
-  list-style-type: none;
+  margin: 30px 0 0;
+  display: inline-block;
+  width: 100%;
   
-  li:before {
-    content: "\203A"; // › symbol
-    font-family: $quicksand;
-    font-weight: bold;
-    margin-left: -18px;
-    padding-right: 10px;
+  + p {
+    margin-top: 16px;
   }
+}
+p + ol,
+p + ul {
+  margin-top: 10px;
 }
 p {
   margin-bottom: 0;
@@ -120,72 +106,101 @@ p {
   font-family: $cursive;
   color: $llc-pink;
 }
+
+// List styles
+ul {
+  padding: 0;
+    
+  li {
+    margin-bottom: 6px;
+    margin-left: 24px;
+    list-style-type: none;
+    
+    &:before {
+      content: "\203A"; // › symbol
+      font-family: $quicksand;
+      font-weight: bold;
+      margin-left: -19px;
+      padding-right: 10px;
+    }
+  }
+}
+ul, ol {
+  ol, ul,
+  .list-sm & {
+    margin-top: 6px;
+    font-size: $font-size-sm;
+  }
+}
+p + ul,
+p + ol {
+  margin-top: 25px;
+}
+//used to be no-bullet-list
+.nested-list {
+  ul {
+    margin-left: -22px;
+    
+    li:before {
+      content: "";
+      margin-left: -9px;
+    }
+    ol, ul {
+      width: 90%;
+      margin-bottom: 25px;
+      
+      li:before {
+        content: "\203A";
+        margin-left: 4px;
+      }  
+    }
+  }
+  .resources + ul {
+    > li {
+      margin-left: 35px;
+      
+      &:before {
+        content: "\203A";
+      }
+    }
+  }
+}
 .two-col-list > {
   ul, ol {
     overflow: hidden;
-    padding-left: 8px;
     
     > li {
-      width: 50%;
+      width: 48.5%;
       float: left;
-      margin-left: 0;
+      margin-left: 4px;
       
+      &:first-child {
+        margin-right: 2%;
+      }
       &:before {
         content: "";
+        margin-left: -12px;
       }
-    }
-    ul, ol {
-      margin-top: 10px;
     }
   }
   .resources + ul {
     > li {
       width: 100%;
-      margin-left: 20px;
+      margin-left: 12px;
       
       &:before {
         content: "\203A";
-        padding-right: 8px;
       }
-    }
-  }
-}
-.no-bullet-list {
-  > ul > li {
-    margin-left: 0;
-    
-    &:before {
-      content: "";
-      margin-left: -9px;
-    }
-    ul {
-      margin-left: 15px; 
     }
   }
 }
 
 iframe {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
-pre {
-  margin: 8px 0 30px;
-  white-space: pre-wrap;
-
-  code {
-    overflow-y: auto;
-  }
-}
-code {
-  font-family: Monaco, Andale Mono, monospace;
-  color: #444;
-  font-size: $font-size-code;
-  background: white;
-  border-radius: 4px;
-  padding: 3px 6px;
-}
-
 strong {
   font-weight: 700;
+  color: black;
 }
 
 table {
@@ -202,18 +217,19 @@ table {
     border: none;
     background: transparent;
   }
+	img {
+		width: 100%; 
+	}
 }
 th, td {
   border: 1px solid $gray-light;
-  padding-left: 10px;
+  padding: 10px;
 }
 th {
   text-align: left;
+  font-weight: normal;
 }
-td {
-  padding-right: 60px;
-  padding-left: 10px;
-  
+td {  
   .two-col-table & {
     width: 50%;
   }
@@ -221,18 +237,37 @@ td {
 
 // Helper classes and content styles
 .note,
+.small-type .note,
 .resources,
 .resources + * {
-  line-height: 1.25;
-  font-size: $font-size-xsm;
+  line-height: 1.3;
+  font-size: $font-size-xsm!important;
+  
+  code {
+    font-size: inherit;
+  }
+}
+.resources,
+.resources + * {
   margin-top: 2px;
+}
+.resources {
+  margin-bottom: 5px;
+  
+  + ul li {
+    margin-bottom: 0;
+  }
 }
 .left {
   float: left; 
   
   + ul {
     padding-left: 10px;
-  }
+  }  
+}
+img.left,
+iframe.left {
+  margin-right: 30px;
 }
 .right {
   float: right;
@@ -255,7 +290,12 @@ a.highlight {
     color: red;
   }
 }
-
+.small-type {
+  p, ul, ol {
+    font-size: $font-size-sm;
+    line-height: 1.3;
+  }
+}
 
 [class^="col-"],
 [class*="col-"]{
@@ -264,7 +304,7 @@ a.highlight {
   
   &:last-child {
     margin-right: 0;
-  } 
+  }
 }
 .col-2 {
   width: 48%;
@@ -280,12 +320,17 @@ a.highlight {
 }
 
 
+
+
 /* Base styles for slides
 --------------------------*/
 .slide {
   padding: 45px 64px;
   background-size: cover;
   height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   
   // Adds extra space to the bottom of the slides to allow 
   // presenters to scroll the page up so people in the back
@@ -298,13 +343,9 @@ a.highlight {
   img {
     max-width: 100%;
   }
-  &:target {
-    /* overflow: auto; */
-  }
-  &.js-fiddle > iframe:only-of-type {
-    position: static;
-    width: 525px;
-    height: 350px;
+  p img {
+    margin-top: 6px;
+    margin-bottom: -12px;
   }
   &.centered {
     text-align: center;
@@ -321,6 +362,17 @@ a.highlight {
   }
 }
 
+//slide number
+#indicator {
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  text-shadow: none;
+  color: $llc-pink;
+  background: white;
+  padding: 2px 8px;
+}
+
 /* For two column screenshots */
 .side-by-side {
   img {
@@ -335,6 +387,7 @@ a.highlight {
   transform-style: preserve-3d;
   padding-left: 8%;
   padding-right: 8%;
+  background: $gray-dark;
 
   h1, h2 {
     position: relative;
@@ -347,10 +400,10 @@ a.highlight {
     line-height: 1.1;
   }
   h2 {
-    color: $gray;
+    color: $white;
+    letter-spacing: 0.05rem;
     font-size: $font-size-heading;
     font-family: "Quicksand",sans-serif;
-    letter-spacing: -0.05em;
     text-transform: uppercase;
   }
 }
@@ -364,54 +417,50 @@ a.highlight {
   &:before {
     content: "";
   }
-  .end {
-
-  }
 }
 
 /* textarea for dynamic CSS demos */
 .edit {
   float: left;
   background: #FFEFD5;
+  border-right: 1px solid darken(#FFEFD5, 20);
+  border-bottom: 1px solid darken(#FFEFD5, 20);
   font-size: 11px;
   padding: 6px 14px;
   position: relative;
-  bottom: -19px;
+  bottom: -20px;
   left: 1px;
   margin-bottom: -25px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 textarea.snippet {
   width: 100%;
   border: 1px solid #222;
   padding: 35px 12px 12px;;
-  margin-top: 15px;
-  font-size: $font-size-code!important;
+  margin: 15px 0;
+  font-size: 20px!important;
   font-family: Andale Mono, Monaco, monospace;
   line-height: 1.4;
 }
 
-
 /* Creates border for slide examples */
 .example,
 blockquote {
-  border: 1px solid $gray-light;
-  padding: 0 15px;
   font-size: $font-size-sm;
-  margin: 20px 0;
+  margin: 15px 0;
   
   p {
-    margin: 10px 0;
-  }
-  &:last-child {
-    margin-bottom: 50px;
+    margin: 10px;
   }
 }
+.example {
+  border: 1px solid $gray-light;
+  padding: 5px 10px;
+}
 blockquote {
-  margin: 25px 0 20px;
-  font-size: $font-size-sm;
   background: #fff;
-  border: 4px solid rgba(177, 9, 170, 0.2)
+  border: 3px solid rgba(177, 9, 170, 0.2)
 }
 
 /* Incremental slides */
@@ -425,8 +474,10 @@ Background color style for headings
 Use spans wrap inside of a heading for div. 
 e.g.
 <h1 class="title-bg">
-  <span>Welcome to </span><br>
-  <span>Ladies Learning Code!</span>
+  <span>
+    Welcome to<br>
+    Ladies Learning Code!
+  </span>
 </h1>
 */
 .heading-bg {
@@ -514,7 +565,7 @@ e.g.
     color: $white;
   }
   h1 {
-    margin-bottom: 95px;
+    margin-bottom: 10px;
   }
   a {
     color: white;
@@ -591,10 +642,50 @@ footer {
   }
 }
 
-/* highlight.js customizations
--------------------------------*/
+
+/* code blocks
+-----------------------------*/
+pre {
+  margin: 12px 0;
+  white-space: pre-wrap;
+
+  code {
+    overflow-y: auto;
+    font-size: 20px;
+    font-family: Andale Mono, Monaco, monospace;
+  }
+  + pre {
+    margin-top: 15px;
+  }
+  + h2 {
+    margin-top: 25px;
+  }
+  + hr {
+    margin-top: 35px;
+  }
+}
+code {
+  color: #555;
+  font-size: $font-size-base - 2;
+  padding: 0 4px;
+}
+
+//code samples
+.highlighted-tags strong {
+  background: #ddd;
+  padding: 5px;
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+
+  [class^="hljs-"]{
+    color: black;
+    font-weight: bold;
+  }
+}
+
+/* highlight.js customizations */
 .hljs {
-  font-family: Andale Mono, Monaco, monospace;
   padding: 12px;
   border-radius: 2px;
   border: 1px solid $gray-light;
@@ -603,6 +694,9 @@ footer {
 .hljs-doctype,
 .hljs-comment {
   color: #990;
+}
+.php .hljs-preprocessor {
+  color: green;
 }
 
 

@@ -6,14 +6,6 @@
               url(../img/banner-home2.jpg) no-repeat;
   background-size: cover;
 }
-
-.resized img {
-  width: 70%;
-}
-.keep-calm {
-  background: url(../img/workshop/keep-calm.png) no-repeat right 20%;
-  background-size: 500px;
-}
 .wp-intro {
   img {
     float: left;
@@ -40,10 +32,6 @@
     img {
       margin-top: 15px;
     }
-  }
-  &.followers {
-    background: url(../img/workshop/followers.gif) no-repeat 50% 50%;
-    background-size: 80%;
   }
 }
 
