@@ -10,6 +10,13 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+  
+  @media (min-width: 1401px) {
+    font-size: 70%;
+  }
+}
 body {
   padding: 0;
   margin: 0;
@@ -20,15 +27,13 @@ body {
   border-top: 4px solid $llc-pink;
   -webkit-font-smoothing: antialiased;
   background: #ecf0f1;
-  
-  @media (min-width: 1401px) {
-    font-size: $font-size-base + 6;
-  }
 }
 
-h2 {
-  margin: 0;
+strong {
+  font-weight: 700;
+  color: black;
 }
+
 h1 {
   font-family: $heading-font;
   letter-spacing: -0.05em;
@@ -45,10 +50,11 @@ h1 {
     font-size: inherit;
     color: inherit;
     font-family: inherit;
+    background: transparent;
   }
 }
-h2 {
-  font-size: $font-size-heading-sm;
+h2, h3 {
+  margin: 0;
   
   + p,
   + ul,
@@ -56,20 +62,13 @@ h2 {
     margin-top: 6px;
   }
 }
-h3, h4 {
-  margin: 32px 0 10px;
-  
-  + p, + pre {
-    margin-top: 4px;
-  }
+h2 {
+  font-size: $font-size-heading-sm;
 }
-h5 {
-  margin-bottom: 10px;
+h3 {
+  font-size: $font-size-heading-sm * .9;
 }
-h6 {
-  text-transform: none;
-  margin: 5px 0;
-}
+
 a {
   outline: none;
   color: inherit;
@@ -79,6 +78,7 @@ a {
     text-decoration: none;
   }
 }
+
 hr {
   border: none;
   border-top: 1px solid $gray-light;
@@ -91,10 +91,7 @@ hr {
     margin-top: 16px;
   }
 }
-p + ol,
-p + ul {
-  margin-top: 10px;
-}
+
 p {
   margin-bottom: 0;
   
@@ -102,17 +99,27 @@ p {
     margin-top: 30px;
   }
 }
-.cursive {
-  font-family: $cursive;
-  color: $llc-pink;
+
+iframe {
+  margin-top: 15px;
 }
 
+
 // List styles
+//----------------
+ol, ul {
+  > li {
+    margin-bottom: 6px;
+  }
+  ol, ul {
+    margin-top: 6px;
+    font-size: $font-size-sm;
+  }
+}
 ul {
   padding: 0;
     
-  li {
-    margin-bottom: 6px;
+  > li {
     margin-left: 24px;
     list-style-type: none;
     
@@ -125,34 +132,22 @@ ul {
     }
   }
 }
-ul, ol {
-  ol, ul,
-  .list-sm & {
-    margin-top: 6px;
-    font-size: $font-size-sm;
-  }
-}
 p + ul,
 p + ol {
-  margin-top: 25px;
+  margin-top: 20px;
 }
-//used to be no-bullet-list
+
 .nested-list {
-  ul {
-    margin-left: -22px;
+  > ul {
+    margin-left: -24px;
     
-    li:before {
+    > li:before {
       content: "";
-      margin-left: -9px;
+      margin-left: -10px;
     }
     ol, ul {
       width: 90%;
       margin-bottom: 25px;
-      
-      li:before {
-        content: "\203A";
-        margin-left: 4px;
-      }  
     }
   }
   .resources + ul {
@@ -165,17 +160,18 @@ p + ol {
     }
   }
 }
+
 .two-col-list > {
   ul, ol {
     overflow: hidden;
     
     > li {
-      width: 48.5%;
+      width: 45%;
       float: left;
       margin-left: 4px;
       
       &:first-child {
-        margin-right: 2%;
+        margin-right: 5%;
       }
       &:before {
         content: "";
@@ -193,14 +189,6 @@ p + ol {
       }
     }
   }
-}
-
-iframe {
-  margin-top: 20px;
-}
-strong {
-  font-weight: 700;
-  color: black;
 }
 
 table {
@@ -258,17 +246,23 @@ td {
     margin-bottom: 0;
   }
 }
+
 .left {
   float: left; 
   
   + ul {
     padding-left: 10px;
-  }  
+  }
 }
 img.left,
 iframe.left {
   margin-right: 30px;
 }
+img.right,
+iframe.right {
+  margin-left: 30px;
+}
+
 .right {
   float: right;
 }
@@ -282,13 +276,15 @@ iframe.left {
     display: block;
   }
 }
-.highlight,
+.cursive {
+  font-family: $cursive;
+  color: $llc-pink;
+}
+.highlight em,
 a.highlight {
-  color: red;
-
-  a {
-    color: red;
-  }
+  color: $llc-pink;
+  font-size: 106%;
+  padding-right: 2px;
 }
 .small-type {
   p, ul, ol {
@@ -329,7 +325,7 @@ a.highlight {
   background-size: cover;
   height: 100%;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   
   // Adds extra space to the bottom of the slides to allow 
@@ -342,10 +338,6 @@ a.highlight {
   }
   img {
     max-width: 100%;
-  }
-  p img {
-    margin-top: 6px;
-    margin-bottom: -12px;
   }
   &.centered {
     text-align: center;
@@ -434,6 +426,15 @@ a.highlight {
   text-transform: uppercase;
   font-weight: bold;
 }
+p {
+  textarea.snippet {
+    margin-top: -15px;
+    margin-bottom: -10px;
+  }
+  .edit {
+    margin-top: -34px;
+  }
+}
 textarea.snippet {
   width: 100%;
   border: 1px solid #222;
@@ -442,6 +443,10 @@ textarea.snippet {
   font-size: 20px!important;
   font-family: Andale Mono, Monaco, monospace;
   line-height: 1.4;
+  
+  + .example {
+    margin-top: 0;
+  }
 }
 
 /* Creates border for slide examples */
@@ -503,9 +508,16 @@ e.g.
   &.slide {
     padding: 0;
   }
-  h1, 
+  .logo-stacked {
+    margin-right: 50px;
+  }
+  h1,
   .instructions {
     padding: 30px 64px;
+  }
+  .instructions p {
+    margin: 0;
+    line-height: 1.32;
   }
   h1 {
     background: #111;
@@ -513,23 +525,33 @@ e.g.
     margin: 0;
     font-size: 55px;
   }
-  .logo-stacked {
-    margin: 0px 105px 0 -20px;
-  }
   h2 {
-    font-size: 26px;
     float: left;
-  } 
-  .instructions > ul {
-    margin: 0 0 0 235px;
+    color: black;
+    width: 21%;
+    font-family: $quicksand;
+    color: $llc-pink;
+    text-transform: uppercase;
+    font-size: 30px;
   }
-  ul.connected li {
-    margin-bottom: 0;
-  }
-  ul.downloads > li {
-    margin-bottom: 20px;
+  ol, ul {
+    float: left;
+    width: 79%;
+    margin: 0;
+    
+    ul, ol {
+      float: none;
+      width: 100%;
+    }
+    &.connected li:before {
+      content: "";
+    }
+    &.downloads > li {
+      margin-bottom: 15px;
+    }
   }
 }
+
 /* Instructor Info */
 .slide.intro, 
 .slide.last {
@@ -543,7 +565,7 @@ e.g.
     font-size: $font-size-heading;
   }
   .instructor {
-    border-radius: 5px;
+    border-radius: 50%;
     max-width: 225px;
     float: left;
     margin-right: 30px;
@@ -631,7 +653,7 @@ footer {
   font-size: $font-size-sm;
   
   li {
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
   a {
     color: $gray-dark;
@@ -646,13 +668,13 @@ footer {
 /* code blocks
 -----------------------------*/
 pre {
-  margin: 12px 0;
+  margin: 18px 0 12px;
   white-space: pre-wrap;
 
   code {
     overflow-y: auto;
-    font-size: 20px;
-    font-family: Andale Mono, Monaco, monospace;
+    font-size: $font-size-xsm;
+    // font-family: Andale Mono, Monaco, monospace;
   }
   + pre {
     margin-top: 15px;
@@ -666,8 +688,19 @@ pre {
 }
 code {
   color: #555;
-  font-size: $font-size-base - 2;
-  padding: 0 4px;
+  padding: 0 8px;
+  display: inline-block;
+  background: white;
+  font-size: $font-size-base * 1.1;
+  border-radius: 4px;
+  position: relative;
+  top: -2px;
+}
+/* Targets only firefox */
+@-moz-document url-prefix() {
+  code {
+    font-size: $font-size-base - 0.2;
+  }
 }
 
 //code samples
