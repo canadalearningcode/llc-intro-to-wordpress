@@ -6,15 +6,16 @@ APRIL'S THEME IS: Health & Well-Being
 
 See slide 4 for suggestions on how learners can incorporate this month’s theme into their projects - if they choose to participate.
 
-# Canada Learning Code
+# Ladies Learning Code
 ## Intro to Blogging & Wordpress
 
 A full day introduction to Blogging with WordPress workshop.
 
 ### Quick Links
 
-Instructor Notes: ladieslearningcode.github.io/llc-intro-to-wordpress/notes-en.html
-Preview Slides: ladieslearningcode.github.io/llc-intro-to-wordpress/slides.html
+Instructor Notes: http://ladieslearningcode.github.io/llc-intro-to-wordpress/notes-en.html
+
+Preview Slides: http://ladieslearningcode.github.io/llc-intro-to-wordpress/slides.html
 
 
 ### Attributions
