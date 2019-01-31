@@ -6,8 +6,8 @@ APRIL'S THEME IS: Health & Well-Being
 
 See slide 4 for suggestions on how learners can incorporate this month’s theme into their projects - if they choose to participate.
 
-#Canada Learning Code
-##Intro to Blogging & Wordpress
+# Canada Learning Code
+## Intro to Blogging & Wordpress
 
 A full day introduction to Blogging with WordPress workshop.
 
